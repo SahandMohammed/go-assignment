@@ -31,7 +31,6 @@ All validations are tested automatically by the bundled `test_api.sh` script.
 
 - Go 1.21+
 - Docker and Docker Compose
-- Make (optional, for convenience commands)
 
 ## Quick Start
 
@@ -45,16 +44,12 @@ All validations are tested automatically by the bundled `test_api.sh` script.
 2. **Start the infrastructure:**
 
    ```bash
-   make docker-up
-   # OR
    docker compose -f docker/docker-compose.yml up -d
    ```
 
 3. **Run the application:**
 
    ```bash
-   make run
-   # OR
    go run ./cmd/server
    ```
 
