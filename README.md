@@ -181,14 +181,6 @@ LOG_LEVEL=info
 
 ## Testing
 
-Run tests with:
-
-```bash
-make test
-# OR
-go test -v ./...
-```
-
 ### End-to-End API Test Script
 
 An executable bash script `test_api.sh` performs a full black‑box verification of the service (health, auth, validation, wallets, deposits, transfers, admin, security, Redis, error cases).
@@ -253,7 +245,3 @@ docker compose -f docker/docker-compose.yml logs -f
 # Stop and clean up
 docker compose -f docker/docker-compose.yml down -v
 ```
-
-## License
-
-This project is for educational purposes as part of a coding assignment.
